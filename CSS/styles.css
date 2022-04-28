@@ -335,16 +335,7 @@ img {
 .modal-comment {
   margin-bottom: 20px;
 }
-.modal-policy {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  color: var(--primay-text-color);
-  margin-bottom: 30px;
-}
+
 .modal-submit {
   display: flex;
   justify-content: center;
@@ -438,7 +429,7 @@ img {
   width: 16px;
   height: 15px;
   margin-right: 8px;
-  border: 2px solid var(--title-text-color);
+  border: 2px solid var(--secondary-text-color);
   border-radius: 2px;
 }
 .checkbox:checked + .policy-icon {
@@ -448,7 +439,7 @@ img {
   background-size: contain;
   background-origin: border-box;
 }
-.modal-policy input {
+.checkbox {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -459,6 +450,9 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+.policy-link {
+  color: var(--accent-color);
 }
 
 /* Особенности- */
