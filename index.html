@@ -612,19 +612,39 @@
               placeholder="Введите текст"
             ></textarea>
           </label>
+
           <label class="modal-policy">
-            <input class="checkbox" type="checkbox" name="policy" />
-            <span class="policy-icon"></span>
-            Соглашаюсь с рассылкой и принимаю&nbsp;
-            <a
-              class="policy-link"
-              target="blank"
-              rel="noopener noreferrer"
-              href="#"
+            <input
+              class="input-checkbox visually-hidden"
+              type="checkbox"
+              name="modal-policy"
+              id="agreement-checkbox"
+              data-checkbox
+              tabindex="-1"
+            />
+            <span
+              class="checkbox-icon"
+              role="checkbox"
+              tabindex="0"
+              aria-checked="false"
+              aria-labelledby="agreement-checkbox"
+              data-custom-checkbox
             >
-              Условия договора
-            </a>
+              <svg class="icon-checkin" width="16" height="15">
+                <use href="./images/icon/icon.svg#icon-checkin"></use>
+              </svg>
+            </span>
+            <span class="text-terms">Соглашаюсь с рассылкой и принимаю</span>
+            <a
+              class="link-terms"
+              href="/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Условия договора</a
+            >
           </label>
+
           <button class="modal-submit accent-btn" type="submit">
             Отправить
           </button>
